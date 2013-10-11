@@ -4,6 +4,7 @@ Ovc::Application.routes.draw do
   get "staff" => "pages#staff"
   get "services" => "pages#services"
   get "links" => "pages#links"
+  get "health" => "pages#health"
   
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
