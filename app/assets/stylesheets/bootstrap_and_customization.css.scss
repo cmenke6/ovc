@@ -3,17 +3,70 @@ $navbar-default-color: #ffffff;
 $navbar-default-link-color: #2980b9;
 $navbar-default-link-hover-color: #bdc3c7;
 $jumbotron-bg: #2980b9;
-$jumbotron-heading-color: #ecf0f1;
-$jumbotron-color: #ecf0f1;
 
+
+
+
+
+    
 
 @import 'bootstrap';
 
 
 body {
-    padding-top: 80px; /* Whatever the height of your navbar is; the
+    padding-top: 50px; /* Whatever the height of your navbar is; the
                              default is 50px */
 }
+
+
+
+
+/* By default it's not affixed in mobile views, so undo that */
+.bs-sidebar.affix {
+  position: static;
+}
+
+/* First level of nav */
+.bs-sidenav {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  padding-top:    10px;
+  padding-bottom: 10px;
+  text-shadow: 0 1px 0 #fff;
+  background-color: #ffffff;
+  border-radius: 5px;
+}
+.container {
+    margin-top: 10px;
+}
+
+#content {
+        height:800px;
+        max-height:800px;
+    overflow:auto;
+}
+
+
+
+
+    
+
+      .jumbotron{
+          background: linear-gradient(rgba(255,255,255,0), rgba(255,255,255,1)), url('http://666a658c624a3c03a6b2-25cda059d975d2f318c03e90bcf17c40.r92.cf1.rackcdn.com/unsplash_522aab8718598_1.jpg')
+           no-repeat center center fixed;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+          
+      }
+
+
+
+
+
+
+
 
 /*!
  * Bootstrap v3.0.0
