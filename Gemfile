@@ -9,6 +9,7 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 gem 'bootstrap-sass', github: 'thomas-mcdonald/bootstrap-sass', branch:'3'
+gem 'font-awesome-sass'
 
 
 group :development, :test do

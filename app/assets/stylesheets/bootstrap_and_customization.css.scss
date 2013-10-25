@@ -3,19 +3,23 @@ $navbar-default-color: #ffffff;
 $navbar-default-link-color: #2980b9;
 $navbar-default-link-hover-color: #bdc3c7;
 $jumbotron-bg: #2980b9;
+$jumbotron-color: #2980b9;
 
 
 
 
 
-    
+  
 
 @import 'bootstrap';
+/*Import Google Fonts*/
 
+
+@import 'font-awesome'; 
 
 body {
-    padding-top: 50px; /* Whatever the height of your navbar is; the
-                             default is 50px */
+  position: relative; /* For scrollyspy */
+  padding-top: 50px; /* Account for fixed navbar */
 }
 
 
@@ -46,6 +50,36 @@ body {
     overflow:auto;
 }
 
+/* Show and affix the side nav when space allows it */
+@media screen and (min-width: 992px) {
+  .bs-sidebar .nav > .active > ul {
+    display: block;
+  }
+  /* Widen the fixed sidebar */
+  .bs-sidebar.affix,
+  .bs-sidebar.affix-bottom {
+    width: 213px;
+  }
+  .bs-sidebar.affix {
+    position: fixed; /* Undo the static from mobile first approach */
+    top: 80px;
+  }
+  .bs-sidebar.affix-bottom {
+    position: absolute; /* Undo the static from mobile first approach */
+  }
+  .bs-sidebar.affix-bottom .bs-sidenav,
+  .bs-sidebar.affix .bs-sidenav {
+    margin-top: 0;
+    margin-bottom: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  /* Widen the fixed sidebar again */
+  .bs-sidebar.affix-bottom,
+  .bs-sidebar.affix {
+    width: 263px;
+  }
+}
 
 
 
@@ -63,6 +97,79 @@ body {
 
 
 
+
+
+
+
+
+
+  .da-slider h1
+{
+background: rgb(255, 255, 255) transparent;
+/* nice browsers */
+background: rgba(255, 255, 255, 0.5);
+}
+.da-slider p
+{
+background: rgb(255, 255, 255) transparent;
+/* nice browsers */
+background: rgba(255, 255, 255, 0.5);
+}
+
+
+
+ /* Masthead (headings and download button) */
+ .bs-masthead {
+  position: relative;
+  padding: 30px 15px;
+  text-align: center;
+  text-shadow: 0 1px 0 rgba(0,0,0,.15);
+}
+.bs-masthead h1 {
+  font-size: 50px;
+  line-height: 1;
+  color: #2980b9;
+}
+.bs-masthead .btn-outline-inverse {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 18px 24px;
+  font-size: 24px;
+}
+
+/* Links to project-level content like the repo, Expo, etc */
+.bs-masthead-links {
+  margin-bottom: 20px;
+  padding-left: 0;
+  list-style: none;
+  text-align: center;
+}
+.bs-masthead-links li {
+  display: inline-block;
+  padding: 4px 8px;
+}
+.bs-masthead-links a {
+  color: #fff;
+}
+
+@media screen and (min-width: 768px) {
+  .bs-masthead {
+    text-align: left;
+    padding-top:    0px;
+    padding-bottom: 140px;
+  }
+  .bs-masthead h1 {
+    font-size: 100px;
+  }
+  .bs-masthead .lead {
+    margin-right: 25%;
+    font-size: 30px;
+  }
+  .bs-masthead-links {
+    padding: 0;
+    text-align: left;
+  }
+}
 
 
 
